@@ -27,6 +27,7 @@ jobs:
         uses: dtolnay/rust-toolchain@v1
         with:
           toolchain: stable
+          components: clippy, rustfmt
       - name: Build debug
         if: ${{ matrix.target == 'debug' }}
         run: cargo build --all-features --all-targets
@@ -36,3 +37,7 @@ jobs:
       - name: Build Release
         if: ${{ matrix.target == 'release' }}
         run: cargo build --release --all-features --all-targets
+      - name: Cargo fmt
+        run: cargo fmt --all -- --check
+      - name: Cargo clippy
+        run: cargo clippy -- -D warnings
