@@ -18,5 +18,12 @@ name = "longest_no_repeat"
 version = "1.0.0"
 
 [[package]]
+name = "remove_nth_node"
+version = "1.0.0"
+dependencies = [
+ "list_node",
+]
+
+[[package]]
 name = "reverse_integer"
 version = "1.0.0"

@@ -4,4 +4,5 @@ members = [
     "src/reverse_integer",
     "src/add_two_numbers",
     "src/longest_no_repeat",
+    "src/remove_nth_node",
 ]
