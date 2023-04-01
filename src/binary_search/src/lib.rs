@@ -2,14 +2,11 @@ pub struct Solution {}
 
 impl Solution {
     pub fn search(nums: Vec<i32>, target: i32) -> i32 {
-        return match Solution::search_internal(&nums, target) {
-            None => -1,
-            Some(index) => index,
-        };
+        Solution::search_internal(&nums, target).unwrap_or(-1)
     }
 
     fn search_internal(nums: &[i32], target: i32) -> Option<i32> {
-        if nums.len() <= 0 {
+        if nums.is_empty() {
             return None;
         }
 
@@ -22,14 +19,11 @@ impl Solution {
             return Some(start as i32);
         }
 
-        return if nums[start] > target {
-            return Solution::search_internal(&nums[..start], target);
+        if nums[start] > target {
+            Solution::search_internal(&nums[..start], target)
         } else {
-            match Solution::search_internal(&nums[(start + 1)..], target) {
-                None => None,
-                Some(i) => Some(i + 1 + start as i32),
-            }
-        };
+            Solution::search_internal(&nums[(start + 1)..], target).map(|i| i + 1 + start as i32)
+        }
     }
 }
 

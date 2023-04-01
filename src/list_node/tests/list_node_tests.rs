@@ -27,9 +27,9 @@ mod tests {
                 val: 2,
                 next: Some(Box::new(ListNode {
                     val: 3,
-                    next: Some(Box::new(ListNode::new(4)))
-                }))
-            }))
+                    next: Some(Box::new(ListNode::new(4))),
+                })),
+            })),
         };
 
         assert_eq!(list.len(), 4);
@@ -43,9 +43,9 @@ mod tests {
                 val: 3,
                 next: Some(Box::new(ListNode {
                     val: 2,
-                    next: Some(Box::new(ListNode::new(1)))
-                }))
-            }))
+                    next: Some(Box::new(ListNode::new(1))),
+                })),
+            })),
         };
 
         let expected = vec![4, 3, 2, 1];

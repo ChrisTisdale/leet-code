@@ -19,7 +19,7 @@ impl ListNode {
             temp = &d.next;
         }
 
-        return result;
+        result
     }
 
     pub fn from_vec(input: &Vec<i32>) -> Option<Box<ListNode>> {
@@ -29,12 +29,12 @@ impl ListNode {
                 None => Box::new(ListNode::new(input[input.len() - 1 - i])),
                 Some(next) => Box::new(ListNode {
                     val: input[input.len() - 1 - i],
-                    next: Some(next)
-                })
+                    next: Some(next),
+                }),
             });
         }
 
-        return result;
+        result
     }
 
     pub fn len(&self) -> usize {
@@ -45,6 +45,10 @@ impl ListNode {
             temp = &d.next;
         }
 
-        return result;
+        result
+    }
+
+    pub fn is_empty(&self) -> bool {
+        false
     }
 }

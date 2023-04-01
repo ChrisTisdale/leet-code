@@ -18,7 +18,7 @@ impl Solution {
                     let c2 = l as u32;
                     let bin2 = (c2 / 32) as usize;
                     let c3 = c2 % 32;
-                    chars[bin2] = chars[bin2] ^ (1 << c3);
+                    chars[bin2] ^= 1 << c3;
                     start += 1;
                     count -= 1;
                     if l == c {
@@ -27,12 +27,12 @@ impl Solution {
                 }
             }
 
-            chars[bin] = chars[bin] | (1 << check);
+            chars[bin] |= 1 << check;
             count += 1;
             max_value = max(count, max_value);
         }
 
-        return max_value;
+        max_value
     }
 }
 

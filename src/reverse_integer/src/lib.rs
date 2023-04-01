@@ -7,16 +7,16 @@ impl Solution {
         while temp != 0 {
             let output = reverse
                 .checked_mul(10)
-                .map_or(None, |r| r.checked_add(temp % 10));
+                .and_then(|r| r.checked_add(temp % 10));
             if output.is_none() {
                 return 0;
             }
 
             reverse = output.unwrap();
-            temp = temp / 10;
+            temp /= 10;
         }
 
-        return reverse;
+        reverse
     }
 }
 

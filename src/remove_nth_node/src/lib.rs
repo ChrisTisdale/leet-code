@@ -7,7 +7,7 @@ struct RemoveResult {
 
 impl RemoveResult {
     fn new(data: Option<Box<ListNode>>, back: i32) -> RemoveResult {
-        return RemoveResult { data, back };
+        RemoveResult { data, back }
     }
 }
 
@@ -16,11 +16,11 @@ pub struct Solution {}
 impl Solution {
     pub fn remove_nth_from_end(head: Option<Box<ListNode>>, n: i32) -> Option<Box<ListNode>> {
         let result = Solution::remove_nth_from_end_internal(&head, n);
-        return result.data;
+        result.data
     }
 
     fn remove_nth_from_end_internal(head: &Option<Box<ListNode>>, n: i32) -> RemoveResult {
-        return match head.clone() {
+        match head.clone() {
             None => RemoveResult::new(None, n - 1),
             Some(mut data) => {
                 let result = Solution::remove_nth_from_end_internal(&data.next, n);
@@ -29,9 +29,9 @@ impl Solution {
                 }
 
                 data.next = result.data;
-                return RemoveResult::new(Some(data), result.back - 1);
+                RemoveResult::new(Some(data), result.back - 1)
             }
-        };
+        }
     }
 }
 

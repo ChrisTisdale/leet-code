@@ -7,7 +7,7 @@ impl Solution {
         l1: Option<Box<ListNode>>,
         l2: Option<Box<ListNode>>,
     ) -> Option<Box<ListNode>> {
-        return Solution::add_two_numbers_internal(l1, l2, 0);
+        Solution::add_two_numbers_internal(l1, l2, 0)
     }
 
     fn add_two_numbers_internal(
@@ -58,10 +58,10 @@ impl Solution {
         let temp1 = l1.unwrap();
         let temp2 = l2.unwrap();
         let result = temp2.val + temp1.val + carry;
-        return Some(Box::new(ListNode {
+        Some(Box::new(ListNode {
             val: result % 10,
             next: Solution::add_two_numbers_internal(temp1.next, temp2.next, result / 10),
-        }));
+        }))
     }
 }
 
@@ -78,7 +78,7 @@ impl IntConversion for ListNode {
             result.next = Some(ListNode::from_integer(local));
         }
 
-        return result;
+        result
     }
 }
 
