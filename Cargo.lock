@@ -4,7 +4,11 @@ version = 3
 
 [[package]]
 name = "add-two-numbers"
-version = "0.1.0"
+version = "1.0.0"
+
+[[package]]
+name = "longest-no-repeat"
+version = "1.0.0"
 
 [[package]]
 name = "reverse-integer"

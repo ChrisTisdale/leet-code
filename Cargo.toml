@@ -2,4 +2,5 @@
 members = [
     "src/reverse-integer",
     "src/add-two-numbers",
+    "src/longest-no-repeat",
 ]
