@@ -38,49 +38,49 @@ mod tests {
     use super::*;
 
     #[test]
-    fn example_1() {
+    fn example_1_test() {
         let result = Solution::search(vec![-1, 0, 3, 5, 9, 12], 9);
         assert_eq!(result, 4);
     }
 
     #[test]
-    fn example_2() {
+    fn example_2_test() {
         let result = Solution::search(vec![-1, 0, 3, 5, 9, 12], 2);
         assert_eq!(result, -1);
     }
 
     #[test]
-    fn example_3() {
+    fn example_3_test() {
         let result = Solution::search(vec![-1, 0, 3, 5, 9, 12], -1);
         assert_eq!(result, 0);
     }
 
     #[test]
-    fn example_4() {
+    fn example_4_test() {
         let result = Solution::search(vec![-1, 0, 3, 5, 9, 12], 12);
         assert_eq!(result, 5);
     }
 
     #[test]
-    fn example_5() {
+    fn example_5_test() {
         let result = Solution::search(vec![2, 5], 0);
         assert_eq!(result, -1);
     }
 
     #[test]
-    fn example_6() {
+    fn example_6_test() {
         let result = Solution::search(vec![2], 2);
         assert_eq!(result, 0);
     }
 
     #[test]
-    fn example_7() {
+    fn example_7_test() {
         let result = Solution::search(vec![], 0);
         assert_eq!(result, -1);
     }
 
     #[test]
-    fn example_8() {
+    fn example_8_test() {
         let result = Solution::search(vec![5], 0);
         assert_eq!(result, -1);
     }

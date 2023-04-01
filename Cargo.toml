@@ -6,4 +6,5 @@ members = [
     "src/longest_no_repeat",
     "src/remove_nth_node",
     "src/reverse_integer",
+    "src/two_sum",
 ]

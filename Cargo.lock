@@ -31,3 +31,7 @@ dependencies = [
 [[package]]
 name = "reverse_integer"
 version = "1.0.0"
+
+[[package]]
+name = "two_sum"
+version = "1.0.0"

@@ -77,7 +77,7 @@ mod tests {
     }
 
     #[test]
-    fn case_doesnt_matter() {
+    fn case_doesnt_matter_test() {
         let result = Solution::length_of_longest_substring(String::from("aAaAaAaAaA"));
         assert_eq!(result, 2);
     }
@@ -89,7 +89,7 @@ mod tests {
     }
 
     #[test]
-    fn all_character_and_letters() {
+    fn all_character_and_letters_test() {
         let result = Solution::length_of_longest_substring(String::from(
             "asdfghjkl;'qwertyuiop[]\\zxcvbnm,./1234567890-=!@#$%^&*()_+ASDFGHJKLQWERTYUIOPZXCVBNM",
         ));

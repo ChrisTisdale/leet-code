@@ -40,7 +40,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn example_1() {
+    fn example_1_test() {
         let expected = &vec![1, 2, 3, 5];
         let head = ListNode::from_vec(&vec![1, 2, 3, 4, 5]);
         let result = Solution::remove_nth_from_end(head, 2);
@@ -53,14 +53,14 @@ mod tests {
     }
 
     #[test]
-    fn example_2() {
+    fn example_2_test() {
         let head = ListNode::from_vec(&vec![1]);
         let result = Solution::remove_nth_from_end(head, 1);
         assert!(result.is_none());
     }
 
     #[test]
-    fn example_3() {
+    fn example_3_test() {
         let expected = &vec![1];
         let head = ListNode::from_vec(&vec![1, 2]);
         let result = Solution::remove_nth_from_end(head, 1);
