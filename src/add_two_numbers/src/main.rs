@@ -1,46 +1,10 @@
+use list_node::*;
+
 fn main() {
     Solution::add_two_numbers(None, None);
 }
 
 struct Solution {}
-
-#[derive(PartialEq, Eq, Clone, Debug)]
-pub struct ListNode {
-    pub val: i32,
-    pub next: Option<Box<ListNode>>,
-}
-
-impl ListNode {
-    #[inline]
-    fn new(val: i32) -> Self {
-        ListNode { next: None, val }
-    }
-
-    #[allow(dead_code)]
-    fn to_vec(&self) -> Vec<i32> {
-        let mut result: Vec<i32> = Vec::new();
-        result.push(self.val);
-        let mut temp = &self.next;
-        while let Some(d) = temp {
-            result.push(d.val);
-            temp = &d.next;
-        }
-
-        return result;
-    }
-
-    #[allow(dead_code)]
-    fn from_integer(input: i32) -> Box<ListNode> {
-        let mut result = Box::new(ListNode::new(input % 10));
-
-        let local = input / 10;
-        if local != 0 {
-            result.next = Some(ListNode::from_integer(local));
-        }
-
-        return result;
-    }
-}
 
 impl Solution {
     pub(crate) fn add_two_numbers(
@@ -103,6 +67,24 @@ impl Solution {
             next: Solution::add_two_numbers_internal(temp1.next, temp2.next, result / 10),
         }));
     }
+}
+
+trait IntConversion {
+    fn from_integer(input: i32) -> Box<ListNode>;
+}
+
+impl IntConversion for ListNode {
+    fn from_integer(input: i32) -> Box<ListNode> {
+        let mut result = Box::new(ListNode::new(input % 10));
+
+        let local = input / 10;
+        if local != 0 {
+            result.next = Some(ListNode::from_integer(local));
+        }
+
+        return result;
+    }
+
 }
 
 #[cfg(test)]

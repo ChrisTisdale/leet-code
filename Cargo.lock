@@ -3,13 +3,20 @@
 version = 3
 
 [[package]]
-name = "add-two-numbers"
+name = "add_two_numbers"
+version = "1.0.0"
+dependencies = [
+ "list_node",
+]
+
+[[package]]
+name = "list_node"
 version = "1.0.0"
 
 [[package]]
-name = "longest-no-repeat"
+name = "longest_no_repeat"
 version = "1.0.0"
 
 [[package]]
-name = "reverse-integer"
+name = "reverse_integer"
 version = "1.0.0"

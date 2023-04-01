@@ -1,5 +1,5 @@
 [package]
-name = "add-two-numbers"
+name = "list_node"
 version = "1.0.0"
 edition = "2021"
 

@@ -1,5 +1,5 @@
 [package]
-name = "reverse-integer"
+name = "longest_no_repeat"
 version = "1.0.0"
 edition = "2021"
 

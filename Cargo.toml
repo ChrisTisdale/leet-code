@@ -1,6 +1,7 @@
 [workspace]
 members = [
-    "src/reverse-integer",
-    "src/add-two-numbers",
-    "src/longest-no-repeat",
+    "src/list_node",
+    "src/reverse_integer",
+    "src/add_two_numbers",
+    "src/longest_no_repeat",
 ]

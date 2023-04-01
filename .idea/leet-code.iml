@@ -3,9 +3,11 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/src/add-two-numbers/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/reverse-integer/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/longest-no-repeat/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/add_two_numbers/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/list_node/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/list_node/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/longest_no_repeat/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/reverse_integer/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
