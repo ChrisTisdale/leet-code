@@ -10,6 +10,10 @@ dependencies = [
 ]
 
 [[package]]
+name = "binary_search"
+version = "1.0.0"
+
+[[package]]
 name = "list_node"
 version = "1.0.0"
 

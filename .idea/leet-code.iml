@@ -9,6 +9,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/longest_no_repeat/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/remove_nth_node/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/reverse_integer/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/binary_search/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />

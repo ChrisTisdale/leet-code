@@ -6,7 +6,13 @@ fn main() {
 
 struct RemoveResult {
     data: Option<Box<ListNode>>,
-    back: i32
+    back: i32,
+}
+
+impl RemoveResult {
+    fn new(data: Option<Box<ListNode>>, back: i32) -> RemoveResult {
+        return RemoveResult { data, back };
+    }
 }
 
 struct Solution {}
@@ -19,24 +25,15 @@ impl Solution {
 
     fn remove_nth_from_end_internal(head: &Option<Box<ListNode>>, n: i32) -> RemoveResult {
         return match head.clone() {
-            None => RemoveResult {
-                data: None,
-                back: n - 1
-            },
+            None => RemoveResult::new(None, n - 1),
             Some(mut data) => {
                 let result = Solution::remove_nth_from_end_internal(&data.next, n);
                 if result.back == 0 {
-                    return RemoveResult {
-                        data: result.data,
-                        back: -1
-                    }
+                    return RemoveResult::new(result.data, -1);
                 }
 
                 data.next = result.data;
-                return RemoveResult {
-                    data: Some(data),
-                    back: result.back - 1,
-                }
+                return RemoveResult::new(Some(data), result.back - 1);
             }
         };
     }
@@ -61,7 +58,6 @@ mod tests {
 
     #[test]
     fn example_2() {
-        let expected: Vec<i32> = Vec::new();
         let head = ListNode::from_vec(&vec![1]);
         let result = Solution::remove_nth_from_end(head, 1);
         assert!(result.is_none());
