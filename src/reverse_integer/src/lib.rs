@@ -1,8 +1,4 @@
-fn main() {
-    Solution::reverse(0);
-}
-
-struct Solution {}
+pub struct Solution {}
 
 impl Solution {
     pub fn reverse(x: i32) -> i32 {

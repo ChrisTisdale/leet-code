@@ -1,9 +1,5 @@
 use list_node::*;
 
-fn main() {
-    Solution::remove_nth_from_end(None, 0);
-}
-
 struct RemoveResult {
     data: Option<Box<ListNode>>,
     back: i32,
@@ -15,7 +11,7 @@ impl RemoveResult {
     }
 }
 
-struct Solution {}
+pub struct Solution {}
 
 impl Solution {
     pub fn remove_nth_from_end(head: Option<Box<ListNode>>, n: i32) -> Option<Box<ListNode>> {

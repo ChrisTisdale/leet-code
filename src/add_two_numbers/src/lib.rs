@@ -1,13 +1,9 @@
 use list_node::*;
 
-fn main() {
-    Solution::add_two_numbers(None, None);
-}
-
-struct Solution {}
+pub struct Solution {}
 
 impl Solution {
-    pub(crate) fn add_two_numbers(
+    pub fn add_two_numbers(
         l1: Option<Box<ListNode>>,
         l2: Option<Box<ListNode>>,
     ) -> Option<Box<ListNode>> {
@@ -84,7 +80,6 @@ impl IntConversion for ListNode {
 
         return result;
     }
-
 }
 
 #[cfg(test)]

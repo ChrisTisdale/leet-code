@@ -22,4 +22,4 @@ If reversing `x` causes the value to go outside the signed 32-bit integer range 
 
 ## Constraints
 
-> -231 <= x <= 231 - 1
+> -2<sup>31</sup> <= x <= 2<sup>31 - 1</sup>
