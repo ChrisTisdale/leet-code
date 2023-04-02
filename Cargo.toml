@@ -8,4 +8,5 @@ members = [
     "src/remove_nth_node",
     "src/reverse_integer",
     "src/two_sum",
+    "src/valid_sudoku",
 ]

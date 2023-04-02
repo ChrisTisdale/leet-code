@@ -12,6 +12,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/binary_search/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/two_sum/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/pairs_spells_potions/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/valid_sudoku/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
