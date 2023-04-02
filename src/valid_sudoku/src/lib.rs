@@ -34,8 +34,8 @@ impl Solution {
 
                 let offset = &OFFSET_UPDATES[i];
                 let grid_row: usize = match j {
-                    z if z < 3 => offset.row,
-                    z if z < 6 => 1 + offset.row,
+                    0..=2 => offset.row,
+                    3..=5 => 1 + offset.row,
                     _ => 2 + offset.row,
                 };
 
