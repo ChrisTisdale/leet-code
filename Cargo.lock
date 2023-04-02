@@ -22,6 +22,10 @@ name = "longest_no_repeat"
 version = "1.0.0"
 
 [[package]]
+name = "pairs_spells_potions"
+version = "1.0.0"
+
+[[package]]
 name = "remove_nth_node"
 version = "1.0.0"
 dependencies = [

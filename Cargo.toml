@@ -4,6 +4,7 @@ members = [
     "src/binary_search",
     "src/list_node",
     "src/longest_no_repeat",
+    "src/pairs_spells_potions",
     "src/remove_nth_node",
     "src/reverse_integer",
     "src/two_sum",
