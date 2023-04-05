@@ -11,6 +11,8 @@ Given the `head` of a singly linked list, reverse the list, and return the rever
 
 ## Example 2
 
+![example2](assets/rev1ex2.jpg)
+
 > **Input**: head = [1,2]  
 > **Output**: [2,1]
 
