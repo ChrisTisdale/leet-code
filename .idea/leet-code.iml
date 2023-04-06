@@ -14,6 +14,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/pairs_spells_potions/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/valid_sudoku/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/reverse_linked_list/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/merge-two-sorted-lists/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
