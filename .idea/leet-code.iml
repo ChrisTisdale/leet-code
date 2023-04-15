@@ -16,6 +16,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/reverse_linked_list/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/merge-two-sorted-lists/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/integer-to-roman/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/letter_combinations_numbers/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />

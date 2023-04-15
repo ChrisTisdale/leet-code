@@ -5,59 +5,30 @@ struct Roman<'a> {
     value: i32,
 }
 
+#[macro_export]
+macro_rules! roman {
+    ($lhs: literal, $rhs: literal) => {
+        Roman {
+            text: $lhs,
+            value: $rhs,
+        }
+    };
+}
+
 static ROMAN_LOOKUP: &[Roman] = &[
-    Roman {
-        text: "M",
-        value: 1000,
-    },
-    Roman {
-        text: "CM",
-        value: 900,
-    },
-    Roman {
-        text: "D",
-        value: 500,
-    },
-    Roman {
-        text: "CD",
-        value: 400,
-    },
-    Roman {
-        text: "C",
-        value: 100,
-    },
-    Roman {
-        text: "XC",
-        value: 90,
-    },
-    Roman {
-        text: "L",
-        value: 50,
-    },
-    Roman {
-        text: "XL",
-        value: 40,
-    },
-    Roman {
-        text: "X",
-        value: 10,
-    },
-    Roman {
-        text: "IX",
-        value: 9,
-    },
-    Roman {
-        text: "V",
-        value: 5,
-    },
-    Roman {
-        text: "IV",
-        value: 4,
-    },
-    Roman {
-        text: "I",
-        value: 1,
-    },
+    roman!("M", 1000),
+    roman!("CM", 900),
+    roman!("D", 500),
+    roman!("CD", 400),
+    roman!("C", 100),
+    roman!("XC", 90),
+    roman!("L", 50),
+    roman!("XL", 40),
+    roman!("X", 10),
+    roman!("IX", 9),
+    roman!("V", 5),
+    roman!("IV", 4),
+    roman!("I", 1),
 ];
 
 impl Solution {

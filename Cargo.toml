@@ -3,6 +3,7 @@ members = [
     "src/add_two_numbers",
     "src/binary_search",
     "src/integer-to-roman",
+    "src/letter_combinations_numbers",
     "src/list_node",
     "src/longest_no_repeat",
     "src/merge-two-sorted-lists",
