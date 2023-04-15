@@ -60,9 +60,9 @@ mod tests {
     #[test]
     fn i32_overflow_test() {
         let result = Solution::successful_pairs(
-            vec![85899345, 42949672, 21474836],
+            vec![85_899_345, 42_949_672, 21_474_836],
             vec![52, 104, 205],
-            4294967296,
+            4_294_967_296,
         );
         assert_eq!(result.len(), 3);
         assert_eq!(result[0], 3);

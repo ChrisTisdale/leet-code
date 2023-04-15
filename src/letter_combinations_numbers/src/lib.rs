@@ -37,7 +37,15 @@ impl Solution {
         for d in digits.chars() {
             let phone_chars = &DIGIT_CHARACTERS[d as usize - '2' as usize];
             let last = set;
-            if !last.is_empty() {
+            if last.is_empty() {
+                let length = phone_chars.chars.len();
+                set = Vec::with_capacity(length);
+                for i in 0..length {
+                    let mut string = String::with_capacity(1);
+                    string.push(phone_chars.chars[i]);
+                    set.push(string);
+                }
+            } else {
                 let length = last.len() * phone_chars.chars.len();
                 let mut c: usize = 0;
                 set = Vec::with_capacity(length);
@@ -49,14 +57,6 @@ impl Solution {
                     if set.len() % last.len() == 0 {
                         c += 1;
                     }
-                }
-            } else {
-                let length = phone_chars.chars.len();
-                set = Vec::with_capacity(length);
-                for i in 0..length {
-                    let mut string = String::with_capacity(1);
-                    string.push(phone_chars.chars[i]);
-                    set.push(string);
                 }
             };
         }
@@ -74,11 +74,10 @@ mod tests {
         let expected = vec!["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"];
         let result = Solution::letter_combinations(String::from("23"));
         assert_eq!(result.len(), expected.len());
-        for value in expected.iter() {
+        for value in &expected {
             assert!(
                 result.contains(&String::from(*value)),
-                "Didn't contain {}",
-                value
+                "Didn't contain {value}"
             );
         }
     }
@@ -86,7 +85,7 @@ mod tests {
     #[test]
     fn example_2_test() {
         let expected: Vec<&str> = vec![];
-        let result = Solution::letter_combinations(String::from(""));
+        let result = Solution::letter_combinations(String::new());
         assert_eq!(result.len(), expected.len());
     }
 
@@ -95,11 +94,10 @@ mod tests {
         let expected = vec!["a", "b", "c"];
         let result = Solution::letter_combinations(String::from("2"));
         assert_eq!(result.len(), expected.len());
-        for value in expected.iter() {
+        for value in &expected {
             assert!(
                 result.contains(&String::from(*value)),
-                "Didn't contain {}",
-                value
+                "Didn't contain {value}"
             );
         }
     }
@@ -124,11 +122,10 @@ mod tests {
         ];
         let result = Solution::letter_combinations(String::from("2479"));
         assert_eq!(result.len(), expected.len());
-        for value in expected.iter() {
+        for value in &expected {
             assert!(
                 result.contains(&String::from(*value)),
-                "Didn't contain {}",
-                value
+                "Didn't contain {value}"
             );
         }
     }
@@ -142,11 +139,10 @@ mod tests {
         ];
         let result = Solution::letter_combinations(String::from("222"));
         assert_eq!(result.len(), expected.len());
-        for value in expected.iter() {
+        for value in &expected {
             assert!(
                 result.contains(&String::from(*value)),
-                "Didn't contain {}",
-                value
+                "Didn't contain {value}"
             );
         }
     }
@@ -156,11 +152,10 @@ mod tests {
         let expected = vec!["d", "e", "f"];
         let result = Solution::letter_combinations(String::from("3"));
         assert_eq!(result.len(), expected.len());
-        for value in expected.iter() {
+        for value in &expected {
             assert!(
                 result.contains(&String::from(*value)),
-                "Didn't contain {}",
-                value
+                "Didn't contain {value}"
             );
         }
     }
@@ -170,11 +165,10 @@ mod tests {
         let expected = vec!["g", "h", "i"];
         let result = Solution::letter_combinations(String::from("4"));
         assert_eq!(result.len(), expected.len());
-        for value in expected.iter() {
+        for value in &expected {
             assert!(
                 result.contains(&String::from(*value)),
-                "Didn't contain {}",
-                value
+                "Didn't contain {value}"
             );
         }
     }
@@ -184,11 +178,10 @@ mod tests {
         let expected = vec!["j", "k", "l"];
         let result = Solution::letter_combinations(String::from("5"));
         assert_eq!(result.len(), expected.len());
-        for value in expected.iter() {
+        for value in &expected {
             assert!(
                 result.contains(&String::from(*value)),
-                "Didn't contain {}",
-                value
+                "Didn't contain {value}"
             );
         }
     }
@@ -198,11 +191,10 @@ mod tests {
         let expected = vec!["m", "n", "o"];
         let result = Solution::letter_combinations(String::from("6"));
         assert_eq!(result.len(), expected.len());
-        for value in expected.iter() {
+        for value in &expected {
             assert!(
                 result.contains(&String::from(*value)),
-                "Didn't contain {}",
-                value
+                "Didn't contain {value}"
             );
         }
     }
@@ -212,11 +204,10 @@ mod tests {
         let expected = vec!["p", "q", "r", "s"];
         let result = Solution::letter_combinations(String::from("7"));
         assert_eq!(result.len(), expected.len());
-        for value in expected.iter() {
+        for value in &expected {
             assert!(
                 result.contains(&String::from(*value)),
-                "Didn't contain {}",
-                value
+                "Didn't contain {value}"
             );
         }
     }
@@ -226,11 +217,10 @@ mod tests {
         let expected = vec!["t", "u", "v"];
         let result = Solution::letter_combinations(String::from("8"));
         assert_eq!(result.len(), expected.len());
-        for value in expected.iter() {
+        for value in &expected {
             assert!(
                 result.contains(&String::from(*value)),
-                "Didn't contain {}",
-                value
+                "Didn't contain {value}"
             );
         }
     }
@@ -240,11 +230,10 @@ mod tests {
         let expected = vec!["w", "x", "y", "z"];
         let result = Solution::letter_combinations(String::from("9"));
         assert_eq!(result.len(), expected.len());
-        for value in expected.iter() {
+        for value in &expected {
             assert!(
                 result.contains(&String::from(*value)),
-                "Didn't contain {}",
-                value
+                "Didn't contain {value}"
             );
         }
     }

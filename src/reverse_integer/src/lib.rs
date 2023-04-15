@@ -50,19 +50,19 @@ mod tests {
 
     #[test]
     fn large_number_test() {
-        let result = Solution::reverse(1234567890);
+        let result = Solution::reverse(1_234_567_890);
         assert_eq!(result, 987654321);
     }
 
     #[test]
     fn multiple_zeros_tests() {
-        let result = Solution::reverse(1230000000);
+        let result = Solution::reverse(1_230_000_000);
         assert_eq!(result, 321);
     }
 
     #[test]
     fn overflow_test() {
-        let result = Solution::reverse(1534236469);
+        let result = Solution::reverse(1_534_236_469);
         assert_eq!(result, 0);
     }
 }

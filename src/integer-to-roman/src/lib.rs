@@ -41,9 +41,9 @@ impl Solution {
                     num -= lookup.value;
                     result.push_str(lookup.text);
                     break;
-                } else {
-                    slice = &slice[1..];
                 }
+
+                slice = &slice[1..];
             }
         }
 

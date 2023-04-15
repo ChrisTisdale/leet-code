@@ -6,10 +6,12 @@ pub struct ListNode {
 
 impl ListNode {
     #[inline]
+    #[must_use]
     pub fn new(val: i32) -> Self {
         ListNode { next: None, val }
     }
 
+    #[must_use]
     pub fn to_vec(&self) -> Vec<i32> {
         let mut result: Vec<i32> = Vec::new();
         result.push(self.val);
@@ -22,6 +24,7 @@ impl ListNode {
         result
     }
 
+    #[must_use]
     pub fn from_vec(input: &Vec<i32>) -> Option<Box<ListNode>> {
         let mut result = None;
         for i in 0..input.len() {
@@ -37,6 +40,7 @@ impl ListNode {
         result
     }
 
+    #[must_use]
     pub fn len(&self) -> usize {
         let mut result: usize = 1;
         let mut temp = &self.next;
@@ -48,6 +52,7 @@ impl ListNode {
         result
     }
 
+    #[must_use]
     pub fn is_empty(&self) -> bool {
         false
     }

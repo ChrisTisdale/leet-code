@@ -118,7 +118,7 @@ mod tests {
 
     #[test]
     fn example_3_test() {
-        let l1 = ListNode::from_integer(9999999);
+        let l1 = ListNode::from_integer(9_999_999);
         let l2 = ListNode::from_integer(9999);
 
         let result = Solution::add_two_numbers(Some(l1), Some(l2));
@@ -133,7 +133,7 @@ mod tests {
 
     #[test]
     fn example_4_test() {
-        let l2 = ListNode::from_integer(9999999);
+        let l2 = ListNode::from_integer(9_999_999);
         let l1 = ListNode::from_integer(9999);
 
         let result = Solution::add_two_numbers(Some(l1), Some(l2));
@@ -148,7 +148,7 @@ mod tests {
 
     #[test]
     fn example_5_test() {
-        let l2 = ListNode::from_integer(9999999);
+        let l2 = ListNode::from_integer(9_999_999);
         let l1 = ListNode::from_integer(1);
 
         let result = Solution::add_two_numbers(Some(l1), Some(l2));
