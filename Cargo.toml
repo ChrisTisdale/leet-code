@@ -11,6 +11,7 @@ members = [
     "src/remove_nth_node",
     "src/reverse_integer",
     "src/reverse_linked_list",
+    "src/roman-to-integer",
     "src/two_sum",
     "src/valid_sudoku",
 ]
