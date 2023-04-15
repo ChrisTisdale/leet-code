@@ -33,7 +33,7 @@ jobs:
         run: cargo build --all-features --all-targets
       - name: Test
         if: ${{ matrix.target == 'debug' }}
-        run: cargo test
+        run: cargo test --all-features --all-targets --tests
       - name: Build Release
         if: ${{ matrix.target == 'release' }}
         run: cargo build --release --all-features --all-targets
