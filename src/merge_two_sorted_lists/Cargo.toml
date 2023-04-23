@@ -1,5 +1,5 @@
 [package]
-name = "merge-two-sorted-lists"
+name = "merge_two_sorted_lists"
 version = "1.0.0"
 edition = "2021"
 

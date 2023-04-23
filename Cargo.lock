@@ -14,7 +14,7 @@ name = "binary_search"
 version = "1.0.0"
 
 [[package]]
-name = "integer-to-roman"
+name = "integer_to_roman"
 version = "1.0.0"
 
 [[package]]
@@ -30,7 +30,7 @@ name = "longest_no_repeat"
 version = "1.0.0"
 
 [[package]]
-name = "merge-two-sorted-lists"
+name = "merge_two_sorted_lists"
 version = "1.0.0"
 dependencies = [
  "list_node",
@@ -59,7 +59,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "roman-to-integer"
+name = "roman_to_integer"
 version = "1.0.0"
 
 [[package]]

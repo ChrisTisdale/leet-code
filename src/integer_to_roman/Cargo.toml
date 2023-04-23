@@ -1,5 +1,5 @@
 [package]
-name = "integer-to-roman"
+name = "integer_to_roman"
 version = "1.0.0"
 edition = "2021"
 
