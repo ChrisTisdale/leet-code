@@ -19,6 +19,8 @@
       <sourceFolder url="file://$MODULE_DIR$/src/integer_to_roman/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/merge_two_sorted_lists/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/roman_to_integer/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/sliding_window_maximum/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test_helpers/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />

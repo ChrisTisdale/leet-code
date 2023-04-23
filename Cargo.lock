@@ -67,6 +67,10 @@ name = "rotate_image"
 version = "1.0.0"
 
 [[package]]
+name = "sliding_window_maximum"
+version = "1.0.0"
+
+[[package]]
 name = "two_sum"
 version = "1.0.0"
 
