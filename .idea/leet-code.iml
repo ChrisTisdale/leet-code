@@ -18,6 +18,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/integer-to-roman/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/letter_combinations_numbers/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/roman-to-integer/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/rotate_image/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />

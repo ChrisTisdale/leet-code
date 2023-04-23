@@ -12,6 +12,7 @@ members = [
     "src/reverse_integer",
     "src/reverse_linked_list",
     "src/roman-to-integer",
+    "src/rotate_image",
     "src/two_sum",
     "src/valid_sudoku",
 ]
