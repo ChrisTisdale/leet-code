@@ -71,6 +71,13 @@ name = "sliding_window_maximum"
 version = "1.0.0"
 
 [[package]]
+name = "swap_nodes_in_pairs"
+version = "1.0.0"
+dependencies = [
+ "list_node",
+]
+
+[[package]]
 name = "two_sum"
 version = "1.0.0"
 
