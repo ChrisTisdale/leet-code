@@ -22,6 +22,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/sliding_window_maximum/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/test_helpers/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/swap_nodes_in_pairs/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/valid_parentheses/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />

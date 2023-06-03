@@ -16,5 +16,6 @@ members = [
     "src/sliding_window_maximum",
     "src/swap_nodes_in_pairs",
     "src/two_sum",
+    "src/valid_parentheses",
     "src/valid_sudoku",
 ]
