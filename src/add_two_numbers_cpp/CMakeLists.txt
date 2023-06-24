@@ -1,0 +1,18 @@
+file(GLOB ADD_TWO_NUMBERS_FILES "src/*.h" "src/*.cc")
+add_library(add_two_numbers ${ADD_TWO_NUMBERS_FILES})
+
+enable_testing()
+
+file(GLOB TEST_FILES "tests/*.h" "tests/*.cc" "src/*.h" "src/*.cc")
+
+add_executable(
+  add_two_numbers_tests
+  ${TEST_FILES}
+)
+target_link_libraries(
+  add_two_numbers_tests
+  GTest::gtest_main
+)
+
+include(GoogleTest)
+gtest_discover_tests(add_two_numbers_tests)
