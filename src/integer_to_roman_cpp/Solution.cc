@@ -22,6 +22,6 @@ int Solution::search(const std::vector<int>& nums, const int start, const int st
 
     const auto greater = nums[loc] < target;
     const auto new_start = greater ? loc + 1 : start;
-    const auto new_stop = greater ? stop : loc - 1;
+    const auto new_stop = greater ? stop : loc -1;
     return search(nums, new_start, new_stop, target);
 }

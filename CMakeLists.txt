@@ -26,3 +26,4 @@ enable_testing()
 
 add_subdirectory ("src/add_two_numbers_cpp")
 add_subdirectory ("src/binary_search_cpp")
+add_subdirectory ("src/integer_to_roman_cpp")
