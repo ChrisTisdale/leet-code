@@ -11,10 +11,6 @@ endif()
 
 project ("leet-code")
 
-# Include sub-projects.
-add_subdirectory ("src/add_two_numbers_cpp")
-
-set_property(TARGET add_two_numbers PROPERTY CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 include(FetchContent)
@@ -27,3 +23,6 @@ FetchContent_Declare(
 set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(googletest)
 enable_testing()
+
+add_subdirectory ("src/add_two_numbers_cpp")
+add_subdirectory ("src/binary_search_cpp")
