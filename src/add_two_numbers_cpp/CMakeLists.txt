@@ -1,8 +1,6 @@
 file(GLOB ADD_TWO_NUMBERS_FILES "src/*.h" "src/*.cc")
 add_library(add_two_numbers ${ADD_TWO_NUMBERS_FILES})
 
-enable_testing()
-
 file(GLOB TEST_FILES "tests/*.h" "tests/*.cc" "src/*.h" "src/*.cc")
 
 add_executable(
