@@ -3,6 +3,8 @@ add_library(add_two_numbers ${ADD_TWO_NUMBERS_FILES})
 
 file(GLOB TEST_FILES "tests/*.h" "tests/*.cc" "src/*.h" "src/*.cc")
 
+enable_testing()
+
 add_executable(
   add_two_numbers_tests
   ${TEST_FILES}
