@@ -5,16 +5,7 @@ target_compile_features(add_two_numbers PUBLIC cxx_std_20)
 
 file(GLOB TEST_FILES "tests/*.h" "tests/*.cc" "src/*.h" "src/*.cc")
 
-enable_testing()
-
-add_executable(
+package_add_test(
   add_two_numbers_tests
   ${TEST_FILES}
 )
-target_link_libraries(
-  add_two_numbers_tests
-  GTest::gtest_main
-)
-
-include(GoogleTest)
-gtest_discover_tests(add_two_numbers_tests)

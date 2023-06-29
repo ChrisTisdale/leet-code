@@ -7,14 +7,7 @@ file(GLOB TEST_FILES "tests/*.h" "tests/*.cc" "src/*.h" "src/*.cc")
 
 enable_testing()
 
-add_executable(
+package_add_test(
   binary_search_tests
   ${TEST_FILES}
 )
-target_link_libraries(
-  binary_search_tests
-  GTest::gtest_main
-)
-
-include(GoogleTest)
-gtest_discover_tests(binary_search_tests)

@@ -7,14 +7,7 @@ file(GLOB TEST_FILES "tests/*.h" "tests/*.cc" "src/*.h" "src/*.cc")
 
 enable_testing()
 
-add_executable(
+package_add_test(
   integer_to_roman_tests
   ${TEST_FILES}
 )
-target_link_libraries(
-  integer_to_roman_tests
-  GTest::gtest_main
-)
-
-include(GoogleTest)
-gtest_discover_tests(integer_to_roman_tests)
