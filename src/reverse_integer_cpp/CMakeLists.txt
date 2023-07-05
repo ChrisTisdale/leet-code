@@ -1,7 +1,7 @@
 file(GLOB REVERSE_INTEGER_SOURCE "src/*.h" "src/*.cc")
 add_library(reverse_integer ${REVERSE_INTEGER_SOURCE})
 
-target_compile_features(reverse_integer PUBLIC cxx_std_20)
+target_compile_features(reverse_integer PUBLIC cxx_std_23)
 
 file(GLOB TEST_FILES "tests/*.h" "tests/*.cc" "src/*.h" "src/*.cc")
 
