@@ -3,7 +3,7 @@
 int Solution::romanToInt(std::string s) {
     int result = 0;
     int last = 0;
-    for (int i = s.length() - 1; i >= 0; --i) {
+    for (int i = static_cast<int>(s.length()) - 1; i >= 0; --i) {
         int current;
         switch (s[i])
         {
