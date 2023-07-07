@@ -11,6 +11,7 @@ endif()
 
 project("leet-code")
 
+set(gtest_force_shared_crt on)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 option(PACKAGE_TESTS "Build the tests" ON)
