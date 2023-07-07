@@ -1,11 +1,11 @@
-file(GLOB VALID_PARENTHESES_FILES "src/*.h" "src/*.cc")
-add_library(valid_parentheses ${VALID_PARENTHESES_FILES})
+file(GLOB LETTER_COMBINATIONS_NUMBERS_FILES "src/*.h" "src/*.cc")
+add_library(letter_combinations_numbers ${LETTER_COMBINATIONS_NUMBERS_FILES})
 
-target_compile_features(valid_parentheses PUBLIC cxx_std_23)
+target_compile_features(letter_combinations_numbers PUBLIC cxx_std_23)
 
 file(GLOB TEST_FILES "tests/*.h" "tests/*.cc" "src/*.h" "src/*.cc")
 
 package_add_test(
-  valid_parentheses_tests
+  letter_combinations_numbers_tests
   ${TEST_FILES}
 )
