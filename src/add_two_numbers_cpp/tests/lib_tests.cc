@@ -11,7 +11,9 @@ ListNode* to_list_node(const int input) {
 TEST(ADD_TWO_NUMBERS, Example1Test) {
     Solution sl;
     auto expected = to_list_node(807);
-    auto result = sl.addTwoNumbers(to_list_node(342), to_list_node(465));
+    auto left = to_list_node(342);
+    auto right = to_list_node(465);
+    auto result = sl.addTwoNumbers(left, right);
     GTEST_ASSERT_TRUE(result);
     while (result && expected) {
         GTEST_ASSERT_EQ(expected->val, result->val);
@@ -20,12 +22,17 @@ TEST(ADD_TWO_NUMBERS, Example1Test) {
     }
 
     GTEST_ASSERT_FALSE(result || expected);
+    delete expected;
+    delete left;
+    delete right;
 }
 
 TEST(ADD_TWO_NUMBERS, Example2Test) {
     Solution sl;
     auto expected = to_list_node(0);
-    auto result = sl.addTwoNumbers(to_list_node(0), to_list_node(0));
+    auto left = to_list_node(0);
+    auto right = to_list_node(0);
+    auto result = sl.addTwoNumbers(left, right);
     GTEST_ASSERT_TRUE(result);
     while (result && expected) {
         GTEST_ASSERT_EQ(expected->val, result->val);
@@ -34,12 +41,17 @@ TEST(ADD_TWO_NUMBERS, Example2Test) {
     }
 
     GTEST_ASSERT_FALSE(result || expected);
+    delete expected;
+    delete left;
+    delete right;
 }
 
 TEST(ADD_TWO_NUMBERS, Example3Test) {
     Solution sl;
     auto expected = to_list_node(10009998);
-    auto result = sl.addTwoNumbers(to_list_node(9999999), to_list_node(9999));
+    auto left = to_list_node(9999999);
+    auto right = to_list_node(9999);
+    auto result = sl.addTwoNumbers(left, right);
     GTEST_ASSERT_TRUE(result);
     while (result && expected) {
         GTEST_ASSERT_EQ(expected->val, result->val);
@@ -48,12 +60,17 @@ TEST(ADD_TWO_NUMBERS, Example3Test) {
     }
 
     GTEST_ASSERT_FALSE(result || expected);
+    delete expected;
+    delete left;
+    delete right;
 }
 
 TEST(ADD_TWO_NUMBERS, Example4Test) {
     Solution sl;
     auto expected = to_list_node(10000000);
-    auto result = sl.addTwoNumbers(to_list_node(1), to_list_node(9999999));
+    auto left = to_list_node(1);
+    auto right = to_list_node(9999999);
+    auto result = sl.addTwoNumbers(left, right);
     GTEST_ASSERT_TRUE(result);
     while (result && expected) {
         GTEST_ASSERT_EQ(expected->val, result->val);
@@ -62,4 +79,7 @@ TEST(ADD_TWO_NUMBERS, Example4Test) {
     }
 
     GTEST_ASSERT_FALSE(result || expected);
+    delete expected;
+    delete left;
+    delete right;
 }

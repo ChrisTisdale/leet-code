@@ -65,7 +65,9 @@
       "installDir": "${sourceDir}/out/install/${presetName}",
       "cacheVariables": {
         "CMAKE_BUILD_TYPE": "Debug",
-        "PACKAGE_TESTS": "ON"
+        "PACKAGE_TESTS": "ON",
+        "CMAKE_C_COMPILER": "clang",
+        "CMAKE_CXX_COMPILER": "clang++"
       },
       "condition": {
         "type": "equals",
@@ -86,7 +88,9 @@
       "installDir": "${sourceDir}/out/install/${presetName}",
       "cacheVariables": {
         "CMAKE_BUILD_TYPE": "Release",
-        "PACKAGE_TESTS": "OFF"
+        "PACKAGE_TESTS": "OFF",
+        "CMAKE_C_COMPILER": "clang",
+        "CMAKE_CXX_COMPILER": "clang++"
       },
       "condition": {
         "type": "equals",

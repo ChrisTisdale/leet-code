@@ -15,12 +15,7 @@ TEST(REMOVE_NTH_NODE, Example1Test) {
         GTEST_ASSERT_EQ(expected[i], resultList[i]);
     }
 
-    auto current = head;
-    while (current) {
-        head = head->next;
-        delete current;
-        current = head;
-    }
+    delete head;
 }
 
 TEST(REMOVE_NTH_NODE, Example2Test) {
@@ -29,11 +24,7 @@ TEST(REMOVE_NTH_NODE, Example2Test) {
     auto result = sl.removeNthFromEnd(head, 1);
     GTEST_ASSERT_EQ(nullptr, result);
     auto current = head;
-    while (current) {
-        head = head->next;
-        delete current;
-        current = head;
-    }
+    delete head;
 }
 
 TEST(REMOVE_NTH_NODE, Example3Test) {
@@ -49,10 +40,5 @@ TEST(REMOVE_NTH_NODE, Example3Test) {
         GTEST_ASSERT_EQ(expected[i], resultList[i]);
     }
 
-    auto current = head;
-    while (current) {
-        head = head->next;
-        delete current;
-        current = head;
-    }
+    delete head;
 }
