@@ -1,11 +1,12 @@
-file(GLOB LETTER_COMBINATIONS_NUMBERS_FILES "src/*.h" "src/*.cc")
-add_library(letter_combinations_numbers ${LETTER_COMBINATIONS_NUMBERS_FILES})
-
+list(APPEND SOURCE_FILES "src/Solution.cc")
+add_library(letter_combinations_numbers ${SOURCE_FILES})
+include_directories(${LIST_NODE_INCLUDE})
 target_compile_features(letter_combinations_numbers PUBLIC cxx_std_23)
 
-file(GLOB TEST_FILES "tests/*.h" "tests/*.cc" "src/*.h" "src/*.cc")
+list(APPEND TEST_FILES "tests/lib_tests.cc")
 
 package_add_test(
   letter_combinations_numbers_tests
   ${TEST_FILES}
+  ${SOURCE_FILES}
 )

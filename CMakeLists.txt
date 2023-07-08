@@ -52,6 +52,7 @@ if(PACKAGE_TESTS)
     enable_testing()
 endif()
 
+add_subdirectory("src/list_node_cpp")
 add_subdirectory("src/add_two_numbers_cpp")
 add_subdirectory("src/binary_search_cpp")
 add_subdirectory("src/integer_to_roman_cpp")

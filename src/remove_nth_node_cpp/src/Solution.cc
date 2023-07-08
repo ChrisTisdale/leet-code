@@ -1,4 +1,3 @@
-#include "ListNode.h"
 #include "Solution.h"
 
 ListNode* Solution::removeNthFromEnd(ListNode* head, int n) {

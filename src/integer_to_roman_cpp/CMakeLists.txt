@@ -1,11 +1,12 @@
-file(GLOB SOURCE_FILES "src/*.h" "src/*.cc")
+list(APPEND SOURCE_FILES "src/Solution.cc")
 add_library(integer_to_roman ${SOURCE_FILES})
-
+include_directories(${LIST_NODE_INCLUDE})
 target_compile_features(integer_to_roman PUBLIC cxx_std_23)
 
-file(GLOB TEST_FILES "tests/*.h" "tests/*.cc" "src/*.h" "src/*.cc")
+list(APPEND TEST_FILES "tests/solution_tests.cc")
 
 package_add_test(
   integer_to_roman_tests
   ${TEST_FILES}
+  ${SOURCE_FILES}
 )

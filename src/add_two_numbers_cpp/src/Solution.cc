@@ -1,4 +1,3 @@
-#include "ListNode.h"
 #include "Solution.h"
 
 ListNode* Solution::addTwoNumbers(ListNode* l1, ListNode* l2) {
