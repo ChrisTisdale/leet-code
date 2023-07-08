@@ -1,4 +1,5 @@
 list(APPEND SOURCE_FILES "src/Solution.cc")
+list(APPEND ADD_TWO_NUMBERS_FILES "src/Solution.h")
 add_library(integer_to_roman ${SOURCE_FILES})
 include_directories(${LIST_NODE_INCLUDE})
 target_compile_features(integer_to_roman PUBLIC cxx_std_23)
