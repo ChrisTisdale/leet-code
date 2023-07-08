@@ -23,6 +23,27 @@
       <sourceFolder url="file://$MODULE_DIR$/src/test_helpers/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/swap_nodes_in_pairs/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/valid_parentheses/src" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/CMakeFiles" />
+      <excludeFolder url="file://$MODULE_DIR$/cmake-build-debug" />
+      <excludeFolder url="file://$MODULE_DIR$/externals/googletest/CMakeFiles" />
+      <excludeFolder url="file://$MODULE_DIR$/externals/googletest/googlemock/CMakeFiles" />
+      <excludeFolder url="file://$MODULE_DIR$/externals/googletest/googletest/CMakeFiles" />
+      <excludeFolder url="file://$MODULE_DIR$/out/build/linux-debug" />
+      <excludeFolder url="file://$MODULE_DIR$/out/build/linux-release" />
+      <excludeFolder url="file://$MODULE_DIR$/out/build/x64-debug" />
+      <excludeFolder url="file://$MODULE_DIR$/out/build/x64-release" />
+      <excludeFolder url="file://$MODULE_DIR$/out/build/x86-debug" />
+      <excludeFolder url="file://$MODULE_DIR$/out/build/x86-release" />
+      <excludeFolder url="file://$MODULE_DIR$/src/add_two_numbers_cpp/CMakeFiles" />
+      <excludeFolder url="file://$MODULE_DIR$/src/binary_search_cpp/CMakeFiles" />
+      <excludeFolder url="file://$MODULE_DIR$/src/integer_to_roman_cpp/CMakeFiles" />
+      <excludeFolder url="file://$MODULE_DIR$/src/letter_combinations_numbers_cpp/CMakeFiles" />
+      <excludeFolder url="file://$MODULE_DIR$/src/longest_no_repeat_cpp/CMakeFiles" />
+      <excludeFolder url="file://$MODULE_DIR$/src/remove_nth_node_cpp/CMakeFiles" />
+      <excludeFolder url="file://$MODULE_DIR$/src/reverse_integer_cpp/CMakeFiles" />
+      <excludeFolder url="file://$MODULE_DIR$/src/roman_to_integer_cpp/CMakeFiles" />
+      <excludeFolder url="file://$MODULE_DIR$/src/valid_parentheses_cpp/CMakeFiles" />
+      <excludeFolder url="file://$MODULE_DIR$/src/valid_sudoku_cpp/CMakeFiles" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
