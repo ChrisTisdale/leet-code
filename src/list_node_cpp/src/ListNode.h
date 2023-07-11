@@ -52,7 +52,7 @@ struct ListNode {
             current = current->next;
         }
 
-        return std::move(in);
+        return in;
     }
 private:
 };
