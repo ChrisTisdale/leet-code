@@ -6,19 +6,25 @@ Project for all leet code problems.
 
 ### Setup
 
+#### Rust
+
 Install the rust tool chain <https://doc.rust-lang.org/book/ch01-01-installation.html>.
+
+#### C#
 
 Install the .net 7 SDK <https://dotnet.microsoft.com/en-us/download/dotnet/7.0>.
 
-#### Windows Installation
+#### C++
+
+##### Windows Installation
 
 Install Visual Studio 2022 with C++ and CMake
 
-#### Mac Installation
+##### Mac Installation
 
 Install X-Code command-line utilities and cmake
 
-#### Linux Installation
+##### Linux Installation
 
 Install build-essentails and cmake
 
