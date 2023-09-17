@@ -8,9 +8,15 @@ Project for all leet code problems.
 
 Install the rust tool chain <https://doc.rust-lang.org/book/ch01-01-installation.html>.
 
+Install the .net 7 SDK <https://dotnet.microsoft.com/en-us/download/dotnet/7.0>.
+
 #### Windows Installation
 
 Install Visual Studio 2022 with C++ and CMake
+
+#### Mac Installation
+
+Install X-Code command-line utilities and cmake
 
 #### Linux Installation
 
@@ -20,7 +26,17 @@ Install build-essentails and cmake
 
 #### Rust
 
-To run all the projects and their tests run `cargo test --all-features`
+To run all the projects and their tests run:
+```bash
+cargo test --all-features
+```
+
+#### C#
+
+To run all the projects and their tests run: 
+```bash
+dotnet test leet-code.sln
+```
 
 #### C++
 
@@ -28,11 +44,12 @@ To run all the projects and their tests run `cargo test --all-features`
 
 Open the folder in visual studio and run
 
-##### Linux Builds
+##### Linux & Mac Builds
 
 To run all the project and their tests run:
-
-- `cmake -B build`
-- `cd build`
-- `make`
-- `ctest`
+```bash
+cmake -B build
+cd build
+make
+ctest
+```
