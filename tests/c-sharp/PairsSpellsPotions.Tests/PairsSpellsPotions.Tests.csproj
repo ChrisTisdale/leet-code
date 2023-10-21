@@ -23,7 +23,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\..\src\c-sharp\PairsSpellsPotions\PairsSpellsPotions.csproj" />
+        <ProjectReference Include="..\..\..\src\c-sharp\PairsSpellsPotions\PairsSpellsPotions.csproj"/>
     </ItemGroup>
 
 </Project>

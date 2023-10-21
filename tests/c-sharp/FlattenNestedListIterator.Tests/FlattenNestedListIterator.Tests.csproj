@@ -23,7 +23,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\..\..\src\c-sharp\RomanToInteger\RomanToInteger.csproj"/>
+        <ProjectReference Include="..\..\..\src\c-sharp\FlattenNestedListIterator\FlattenNestedListIterator.csproj"/>
     </ItemGroup>
 
 </Project>
