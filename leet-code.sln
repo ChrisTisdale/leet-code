@@ -16,6 +16,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlattenNestedListIterator",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlattenNestedListIterator.Tests", "tests\c-sharp\FlattenNestedListIterator.Tests\FlattenNestedListIterator.Tests.csproj", "{9D8542C0-4B17-400F-8636-C0426B3FF51F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindTheDuplicateNumber", "src\c-sharp\FindTheDuplicateNumber\FindTheDuplicateNumber.csproj", "{29EC9972-6538-4CCD-9F8A-547F8C870B60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindTheDuplicateNumber.Tests", "tests\c-sharp\FindTheDuplicateNumber.Tests\FindTheDuplicateNumber.Tests.csproj", "{BE2F9A8D-C363-46D1-B855-7053A2952722}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -46,6 +50,14 @@ Global
 		{9D8542C0-4B17-400F-8636-C0426B3FF51F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D8542C0-4B17-400F-8636-C0426B3FF51F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9D8542C0-4B17-400F-8636-C0426B3FF51F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29EC9972-6538-4CCD-9F8A-547F8C870B60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29EC9972-6538-4CCD-9F8A-547F8C870B60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29EC9972-6538-4CCD-9F8A-547F8C870B60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29EC9972-6538-4CCD-9F8A-547F8C870B60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE2F9A8D-C363-46D1-B855-7053A2952722}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE2F9A8D-C363-46D1-B855-7053A2952722}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE2F9A8D-C363-46D1-B855-7053A2952722}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE2F9A8D-C363-46D1-B855-7053A2952722}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{BF5BA8AA-E52F-4238-A420-509839D3A75B} = {BDB985B3-4604-4840-A033-B92863E0B9E0}
@@ -54,5 +66,7 @@ Global
 		{880C18A2-4F6E-4668-BB76-50F4A098DCB7} = {9B835700-456E-4917-8714-2D9CFB0B0468}
 		{2EA901E5-6296-4D40-86D1-669DC19AE6A6} = {BDB985B3-4604-4840-A033-B92863E0B9E0}
 		{9D8542C0-4B17-400F-8636-C0426B3FF51F} = {9B835700-456E-4917-8714-2D9CFB0B0468}
+		{29EC9972-6538-4CCD-9F8A-547F8C870B60} = {BDB985B3-4604-4840-A033-B92863E0B9E0}
+		{BE2F9A8D-C363-46D1-B855-7053A2952722} = {9B835700-456E-4917-8714-2D9CFB0B0468}
 	EndGlobalSection
 EndGlobal

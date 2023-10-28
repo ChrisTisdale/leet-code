@@ -16,9 +16,9 @@ public class NestedIterator
 
     public int Next()
     {
-        if (_iter is not null)
+        while (true)
         {
-            if (_iter.HasNext())
+            if (_iter is not null && _iter.HasNext())
             {
                 var next = _iter.Next();
                 if (_iter.HasNext())
@@ -31,18 +31,15 @@ public class NestedIterator
                 return next;
             }
 
-            _iter = null;
-        }
+            var cur = _nestedList[_currentIndex++];
+            if (cur.IsInteger())
+            {
+                PeekNext();
+                return cur.GetInteger();
+            }
 
-        var cur = _nestedList[_currentIndex++];
-        if (cur.IsInteger())
-        {
-            PeekNext();
-            return cur.GetInteger();
+            _iter = new NestedIterator(cur.GetList());
         }
-
-        _iter = new NestedIterator(cur.GetList());
-        return Next();
     }
 
     private void PeekNext()

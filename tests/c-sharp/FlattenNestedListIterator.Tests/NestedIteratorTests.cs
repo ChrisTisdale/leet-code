@@ -13,6 +13,6 @@ public class NestedIteratorTests
             result.Add(target.Next());
         }
 
-        Assert.Equal(expected, result);
+        result.Should().Equal(expected);
     }
 }
