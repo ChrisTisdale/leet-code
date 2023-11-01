@@ -6,7 +6,6 @@ TEST(BINNARY_SEARCH, Example1Test) {
     std::vector<int> input{-1, 0, 3, 5, 9, 12};
     Solution sl;
     auto result = sl.search(input, 9);
-    printf("%d", result);
     GTEST_ASSERT_EQ(4, result);
 }
 
