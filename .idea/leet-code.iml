@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+  <?xml version="1.0" encoding="UTF-8"?>
 <module type="JAVA_MODULE" version="4">
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
@@ -117,6 +117,8 @@
       <excludeFolder url="file://$MODULE_DIR$/CMakeFiles" />
       <excludeFolder url="file://$MODULE_DIR$/CMakeFiles" />
       <excludeFolder url="file://$MODULE_DIR$/CMakeFiles" />
+      <excludeFolder url="file://$MODULE_DIR$/CMakeFiles" />
+      <excludeFolder url="file://$MODULE_DIR$/cmake-build-debug" />
       <excludeFolder url="file://$MODULE_DIR$/cmake-build-debug" />
       <excludeFolder url="file://$MODULE_DIR$/cmake-build-debug" />
       <excludeFolder url="file://$MODULE_DIR$/cmake-build-debug" />
@@ -130,6 +132,8 @@
       <excludeFolder url="file://$MODULE_DIR$/out/build/linux-debug" />
       <excludeFolder url="file://$MODULE_DIR$/out/build/linux-debug" />
       <excludeFolder url="file://$MODULE_DIR$/out/build/linux-debug" />
+      <excludeFolder url="file://$MODULE_DIR$/out/build/linux-debug" />
+      <excludeFolder url="file://$MODULE_DIR$/out/build/linux-release" />
       <excludeFolder url="file://$MODULE_DIR$/out/build/linux-release" />
       <excludeFolder url="file://$MODULE_DIR$/out/build/linux-release" />
       <excludeFolder url="file://$MODULE_DIR$/out/build/linux-release" />
@@ -140,6 +144,8 @@
       <excludeFolder url="file://$MODULE_DIR$/out/build/macos-debug" />
       <excludeFolder url="file://$MODULE_DIR$/out/build/macos-debug" />
       <excludeFolder url="file://$MODULE_DIR$/out/build/macos-debug" />
+      <excludeFolder url="file://$MODULE_DIR$/out/build/macos-debug" />
+      <excludeFolder url="file://$MODULE_DIR$/out/build/macos-relese" />
       <excludeFolder url="file://$MODULE_DIR$/out/build/macos-relese" />
       <excludeFolder url="file://$MODULE_DIR$/out/build/macos-relese" />
       <excludeFolder url="file://$MODULE_DIR$/out/build/macos-relese" />
@@ -150,6 +156,8 @@
       <excludeFolder url="file://$MODULE_DIR$/out/build/x64-debug" />
       <excludeFolder url="file://$MODULE_DIR$/out/build/x64-debug" />
       <excludeFolder url="file://$MODULE_DIR$/out/build/x64-debug" />
+      <excludeFolder url="file://$MODULE_DIR$/out/build/x64-debug" />
+      <excludeFolder url="file://$MODULE_DIR$/out/build/x64-release" />
       <excludeFolder url="file://$MODULE_DIR$/out/build/x64-release" />
       <excludeFolder url="file://$MODULE_DIR$/out/build/x64-release" />
       <excludeFolder url="file://$MODULE_DIR$/out/build/x64-release" />
@@ -160,6 +168,8 @@
       <excludeFolder url="file://$MODULE_DIR$/out/build/x86-debug" />
       <excludeFolder url="file://$MODULE_DIR$/out/build/x86-debug" />
       <excludeFolder url="file://$MODULE_DIR$/out/build/x86-debug" />
+      <excludeFolder url="file://$MODULE_DIR$/out/build/x86-debug" />
+      <excludeFolder url="file://$MODULE_DIR$/out/build/x86-release" />
       <excludeFolder url="file://$MODULE_DIR$/out/build/x86-release" />
       <excludeFolder url="file://$MODULE_DIR$/out/build/x86-release" />
       <excludeFolder url="file://$MODULE_DIR$/out/build/x86-release" />
@@ -171,12 +181,16 @@
       <excludeFolder url="file://$MODULE_DIR$/src/cpp/add_two_numbers_cpp/CMakeFiles" />
       <excludeFolder url="file://$MODULE_DIR$/src/cpp/add_two_numbers_cpp/CMakeFiles" />
       <excludeFolder url="file://$MODULE_DIR$/src/cpp/add_two_numbers_cpp/CMakeFiles" />
+      <excludeFolder url="file://$MODULE_DIR$/src/cpp/add_two_numbers_cpp/CMakeFiles" />
+      <excludeFolder url="file://$MODULE_DIR$/src/cpp/binary_search_cpp/CMakeFiles" />
       <excludeFolder url="file://$MODULE_DIR$/src/cpp/binary_search_cpp/CMakeFiles" />
       <excludeFolder url="file://$MODULE_DIR$/src/cpp/binary_search_cpp/CMakeFiles" />
       <excludeFolder url="file://$MODULE_DIR$/src/cpp/binary_search_cpp/CMakeFiles" />
       <excludeFolder url="file://$MODULE_DIR$/src/cpp/binary_search_cpp/CMakeFiles" />
       <excludeFolder url="file://$MODULE_DIR$/src/cpp/find_the_duplicate_number/CMakeFiles" />
       <excludeFolder url="file://$MODULE_DIR$/src/cpp/find_the_duplicate_number/CMakeFiles" />
+      <excludeFolder url="file://$MODULE_DIR$/src/cpp/find_the_duplicate_number/CMakeFiles" />
+      <excludeFolder url="file://$MODULE_DIR$/src/cpp/integer_to_roman_cpp/CMakeFiles" />
       <excludeFolder url="file://$MODULE_DIR$/src/cpp/integer_to_roman_cpp/CMakeFiles" />
       <excludeFolder url="file://$MODULE_DIR$/src/cpp/integer_to_roman_cpp/CMakeFiles" />
       <excludeFolder url="file://$MODULE_DIR$/src/cpp/integer_to_roman_cpp/CMakeFiles" />
@@ -185,6 +199,8 @@
       <excludeFolder url="file://$MODULE_DIR$/src/cpp/letter_combinations_numbers_cpp/CMakeFiles" />
       <excludeFolder url="file://$MODULE_DIR$/src/cpp/letter_combinations_numbers_cpp/CMakeFiles" />
       <excludeFolder url="file://$MODULE_DIR$/src/cpp/letter_combinations_numbers_cpp/CMakeFiles" />
+      <excludeFolder url="file://$MODULE_DIR$/src/cpp/letter_combinations_numbers_cpp/CMakeFiles" />
+      <excludeFolder url="file://$MODULE_DIR$/src/cpp/list_node_cpp/CMakeFiles" />
       <excludeFolder url="file://$MODULE_DIR$/src/cpp/list_node_cpp/CMakeFiles" />
       <excludeFolder url="file://$MODULE_DIR$/src/cpp/list_node_cpp/CMakeFiles" />
       <excludeFolder url="file://$MODULE_DIR$/src/cpp/list_node_cpp/CMakeFiles" />
@@ -193,6 +209,8 @@
       <excludeFolder url="file://$MODULE_DIR$/src/cpp/longest_no_repeat_cpp/CMakeFiles" />
       <excludeFolder url="file://$MODULE_DIR$/src/cpp/longest_no_repeat_cpp/CMakeFiles" />
       <excludeFolder url="file://$MODULE_DIR$/src/cpp/longest_no_repeat_cpp/CMakeFiles" />
+      <excludeFolder url="file://$MODULE_DIR$/src/cpp/longest_no_repeat_cpp/CMakeFiles" />
+      <excludeFolder url="file://$MODULE_DIR$/src/cpp/pairs_spells_potions_cpp/CMakeFiles" />
       <excludeFolder url="file://$MODULE_DIR$/src/cpp/pairs_spells_potions_cpp/CMakeFiles" />
       <excludeFolder url="file://$MODULE_DIR$/src/cpp/pairs_spells_potions_cpp/CMakeFiles" />
       <excludeFolder url="file://$MODULE_DIR$/src/cpp/pairs_spells_potions_cpp/CMakeFiles" />
@@ -201,6 +219,8 @@
       <excludeFolder url="file://$MODULE_DIR$/src/cpp/remove_nth_node_cpp/CMakeFiles" />
       <excludeFolder url="file://$MODULE_DIR$/src/cpp/remove_nth_node_cpp/CMakeFiles" />
       <excludeFolder url="file://$MODULE_DIR$/src/cpp/remove_nth_node_cpp/CMakeFiles" />
+      <excludeFolder url="file://$MODULE_DIR$/src/cpp/remove_nth_node_cpp/CMakeFiles" />
+      <excludeFolder url="file://$MODULE_DIR$/src/cpp/reverse_integer_cpp/CMakeFiles" />
       <excludeFolder url="file://$MODULE_DIR$/src/cpp/reverse_integer_cpp/CMakeFiles" />
       <excludeFolder url="file://$MODULE_DIR$/src/cpp/reverse_integer_cpp/CMakeFiles" />
       <excludeFolder url="file://$MODULE_DIR$/src/cpp/reverse_integer_cpp/CMakeFiles" />
@@ -209,6 +229,8 @@
       <excludeFolder url="file://$MODULE_DIR$/src/cpp/reverse_linked_list_cpp/CMakeFiles" />
       <excludeFolder url="file://$MODULE_DIR$/src/cpp/reverse_linked_list_cpp/CMakeFiles" />
       <excludeFolder url="file://$MODULE_DIR$/src/cpp/reverse_linked_list_cpp/CMakeFiles" />
+      <excludeFolder url="file://$MODULE_DIR$/src/cpp/reverse_linked_list_cpp/CMakeFiles" />
+      <excludeFolder url="file://$MODULE_DIR$/src/cpp/roman_to_integer_cpp/CMakeFiles" />
       <excludeFolder url="file://$MODULE_DIR$/src/cpp/roman_to_integer_cpp/CMakeFiles" />
       <excludeFolder url="file://$MODULE_DIR$/src/cpp/roman_to_integer_cpp/CMakeFiles" />
       <excludeFolder url="file://$MODULE_DIR$/src/cpp/roman_to_integer_cpp/CMakeFiles" />
@@ -217,10 +239,13 @@
       <excludeFolder url="file://$MODULE_DIR$/src/cpp/two_sum_cpp/CMakeFiles" />
       <excludeFolder url="file://$MODULE_DIR$/src/cpp/two_sum_cpp/CMakeFiles" />
       <excludeFolder url="file://$MODULE_DIR$/src/cpp/two_sum_cpp/CMakeFiles" />
+      <excludeFolder url="file://$MODULE_DIR$/src/cpp/two_sum_cpp/CMakeFiles" />
       <excludeFolder url="file://$MODULE_DIR$/src/cpp/valid_parentheses_cpp/CMakeFiles" />
       <excludeFolder url="file://$MODULE_DIR$/src/cpp/valid_parentheses_cpp/CMakeFiles" />
       <excludeFolder url="file://$MODULE_DIR$/src/cpp/valid_parentheses_cpp/CMakeFiles" />
       <excludeFolder url="file://$MODULE_DIR$/src/cpp/valid_parentheses_cpp/CMakeFiles" />
+      <excludeFolder url="file://$MODULE_DIR$/src/cpp/valid_parentheses_cpp/CMakeFiles" />
+      <excludeFolder url="file://$MODULE_DIR$/src/cpp/valid_sudoku_cpp/CMakeFiles" />
       <excludeFolder url="file://$MODULE_DIR$/src/cpp/valid_sudoku_cpp/CMakeFiles" />
       <excludeFolder url="file://$MODULE_DIR$/src/cpp/valid_sudoku_cpp/CMakeFiles" />
       <excludeFolder url="file://$MODULE_DIR$/src/cpp/valid_sudoku_cpp/CMakeFiles" />
