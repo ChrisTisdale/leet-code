@@ -17,6 +17,7 @@ jobs:
       fail-fast: true
       matrix:
         os: [ubuntu-latest]
+        configuration: ['Debug', 'Release']
     runs-on: ${{ matrix.os }}
 
     steps:
@@ -34,7 +35,7 @@ jobs:
       - name: Compile the project
         working-directory: ${{github.workspace}}
         run: |
-          cmake --build build --config Debug -j8
+          cmake --build build --config ${{ matrix.configuration }} -j8
 
       - name: Run the tests
         working-directory: ${{github.workspace}}/build
