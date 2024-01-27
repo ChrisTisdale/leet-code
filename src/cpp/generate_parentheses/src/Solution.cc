@@ -37,16 +37,14 @@ std::vector<std::string> Solution::generateParenthesisInternal(std::map<int, std
         }
 
         previous = generateParenthesisInternal(history, n - (n - i) - 1);
-        if (!previous.empty()) {
-            for (auto const&p: current) {
-                for (auto const&c: previous) {
-                    result.push_back(p + c);
-                }
-            }
-        }
-        else {
-            for (const auto&c: current) {
+        for (const auto&c: current) {
+            if (previous.empty()) {
                 result.push_back(c);
+            }
+            else {
+                for (const auto&p: previous) {
+                    result.push_back(c + p);
+                }
             }
         }
     }
