@@ -1,11 +1,12 @@
 #include <algorithm>
+#include <limits>
 
 #include "Solution.h"
 
 int Solution::maxArea(std::vector<int>&height) {
     std::size_t left = 0;
     std::size_t right = height.size() - 1;
-    int max = INT_MIN;
+    int max = std::numeric_limits<int>::min();
     while (left < right) {
         const auto l = height[left];
         const auto r = height[right];
