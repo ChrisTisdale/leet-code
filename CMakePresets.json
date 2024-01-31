@@ -117,7 +117,7 @@
             }
         },
         {
-            "name": "macos-relese",
+            "name": "macos-release",
             "displayName": "Release MacOS Build",
             "description": "Using compilers: C = clang, CXX = clang++",
             "binaryDir": "${sourceDir}/out/build/${presetName}",
