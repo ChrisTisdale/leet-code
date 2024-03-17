@@ -25,7 +25,7 @@ impl ListNode {
     }
 
     #[must_use]
-    pub fn from_vec(input: &Vec<i32>) -> Option<Box<ListNode>> {
+    pub fn from_vec(input: &[i32]) -> Option<Box<ListNode>> {
         let mut result = None;
         for i in 0..input.len() {
             result = Some(match result {

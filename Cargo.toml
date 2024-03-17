@@ -19,3 +19,5 @@ members = [
     "src/rust/valid_parentheses",
     "src/rust/valid_sudoku",
 ]
+
+resolver = "2"
