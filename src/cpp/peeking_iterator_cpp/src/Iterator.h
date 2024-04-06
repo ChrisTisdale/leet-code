@@ -3,15 +3,13 @@
 #include <vector>
 
 class Iterator {
-    std::vector<int> data;
-    int index;
+    std::vector<int>::const_iterator data;
+    const std::vector<int>::const_iterator end;
 public:
-    explicit Iterator(const std::vector<int> &nums) : data(nums), index(0) {};
+    explicit Iterator(const std::vector<int> &nums) : data(nums.begin()), end(nums.end()) {
+    };
 
-    Iterator(const Iterator &iter) {
-        data = iter.data;
-        index = iter.index;
-    }
+    Iterator(const Iterator &iter) = default;
 
     virtual int next();
 

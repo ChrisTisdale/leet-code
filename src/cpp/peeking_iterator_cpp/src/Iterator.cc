@@ -1,9 +1,9 @@
 #include "Iterator.h"
 
 int Iterator::next() {
-    return data[index++];
+    return *data++;
 }
 
 bool Iterator::hasNext() const {
-    return data.size() < index;
+    return data != end;
 }
