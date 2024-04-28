@@ -3,22 +3,22 @@
 
 struct ListNode {
     int val;
-    ListNode* next;
+    ListNode *next;
 
     ListNode() : val(0), next(nullptr) {
     }
 
-    ListNode(int x) : val(x), next(nullptr) {
+    explicit ListNode(int x) : val(x), next(nullptr) {
     }
 
-    ListNode(int x, ListNode* next) : val(x), next(next) {
+    ListNode(int x, ListNode *next) : val(x), next(next) {
     }
 
     ~ListNode() {
         delete next;
     }
 
-    static ListNode* fromVector(const std::vector<int>& input) {
+    static ListNode *fromVector(const std::vector<int> &input) {
         if (input.empty()) {
             return nullptr;
         }
@@ -33,7 +33,7 @@ struct ListNode {
         return head;
     }
 
-    const std::size_t length() {
+    std::size_t length() {
         int count = 0;
         auto current = this;
         while (current) {
@@ -44,7 +44,7 @@ struct ListNode {
         return count;
     }
 
-    const std::vector<int> toList() {
+    std::vector<int> toList() {
         std::vector<int> in;
         auto current = this;
         while (current) {
@@ -54,5 +54,6 @@ struct ListNode {
 
         return in;
     }
+
 private:
 };

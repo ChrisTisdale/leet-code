@@ -1,7 +1,7 @@
 # CMakeList.txt : Top-level CMake project file, do global configuration
 # and include sub-projects here.
 #
-cmake_minimum_required (VERSION 3.8)
+cmake_minimum_required(VERSION 3.8)
 set(CMAKE_EXPORT_COMPILE_COMMANDS 1)
 
 set(CMAKE_TOOLCHAIN_FILE "${CMAKE_CURRENT_SOURCE_DIR}/externals/vcpkg/scripts/buildsystems/vcpkg.cmake"
@@ -9,9 +9,9 @@ set(CMAKE_TOOLCHAIN_FILE "${CMAKE_CURRENT_SOURCE_DIR}/externals/vcpkg/scripts/bu
 
 # Enable Hot Reload for MSVC compilers if supported.
 if (POLICY CMP0141)
-  cmake_policy(SET CMP0141 NEW)
-  set(CMAKE_MSVC_DEBUG_INFORMATION_FORMAT "$<IF:$<AND:$<C_COMPILER_ID:MSVC>,$<CXX_COMPILER_ID:MSVC>>,$<$<CONFIG:Debug,RelWithDebInfo>:EditAndContinue>,$<$<CONFIG:Debug,RelWithDebInfo>:ProgramDatabase>>")
-endif()
+    cmake_policy(SET CMP0141 NEW)
+    set(CMAKE_MSVC_DEBUG_INFORMATION_FORMAT "$<IF:$<AND:$<C_COMPILER_ID:MSVC>,$<CXX_COMPILER_ID:MSVC>>,$<$<CONFIG:Debug,RelWithDebInfo>:EditAndContinue>,$<$<CONFIG:Debug,RelWithDebInfo>:ProgramDatabase>>")
+endif ()
 
 project("leet-code")
 
@@ -20,7 +20,7 @@ set(gtest_force_shared_crt on)
 set(CMAKE_CXX_STANDARD_REQUIRED ON CACHE BOOL "" FORCE)
 
 option(PACKAGE_TESTS "Build the tests" ON)
-if(PACKAGE_TESTS)
+if (PACKAGE_TESTS)
     include(GoogleTest)
     find_package(GTest CONFIG REQUIRED)
     mark_as_advanced(
@@ -28,7 +28,7 @@ if(PACKAGE_TESTS)
             GTest::gmock_build_tests GTest::gtest_build_samples GTest::gtest_build_tests
             GTest::gtest_disable_pthreads GTest::gtest_force_shared_crt GTest::gtest_hide_internal_symbols
     )
-endif()
+endif ()
 
 macro(package_add_test TESTNAME)
     if (PACKAGE_TESTS)
@@ -49,9 +49,9 @@ macro(package_add_test TESTNAME)
     endif ()
 endmacro()
 
-if(PACKAGE_TESTS)
+if (PACKAGE_TESTS)
     enable_testing()
-endif()
+endif ()
 
 add_subdirectory("src/cpp/list_node_cpp")
 add_subdirectory("src/cpp/add_two_numbers_cpp")
@@ -63,6 +63,7 @@ add_subdirectory("src/cpp/generate_parentheses")
 add_subdirectory("src/cpp/integer_to_roman_cpp")
 add_subdirectory("src/cpp/letter_combinations_numbers_cpp")
 add_subdirectory("src/cpp/longest_no_repeat_cpp")
+add_subdirectory("src/cpp/merge_k_sorted_lists")
 add_subdirectory("src/cpp/multiply_strings")
 add_subdirectory("src/cpp/pairs_spells_potions_cpp")
 add_subdirectory("src/cpp/peeking_iterator_cpp")
