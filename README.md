@@ -12,7 +12,7 @@ Install the rust tool chain <https://doc.rust-lang.org/book/ch01-01-installation
 
 #### C#
 
-Install the .net 7 SDK <https://dotnet.microsoft.com/en-us/download/dotnet/7.0>.
+Install the .net 8 SDK <https://dotnet.microsoft.com/en-us/download/dotnet/8.0>.
 
 #### C++
 
