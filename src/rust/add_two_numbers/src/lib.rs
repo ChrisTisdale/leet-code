@@ -65,10 +65,12 @@ impl Solution {
     }
 }
 
+#[cfg(test)]
 trait IntConversion {
     fn from_integer(input: i32) -> Box<ListNode>;
 }
 
+#[cfg(test)]
 impl IntConversion for ListNode {
     fn from_integer(input: i32) -> Box<ListNode> {
         let mut result = Box::new(ListNode::new(input % 10));
