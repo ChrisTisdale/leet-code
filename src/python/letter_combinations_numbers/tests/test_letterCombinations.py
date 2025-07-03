@@ -1,22 +1,22 @@
-from unittest import TestCase
+import unittest
 
 from letter_combinations_numbers.letterCombinations import Solution
 
 
-class TestSolution(TestCase):
+class TestSolution(unittest.TestCase):
     def test_empty_string_returns_empty_results(self):
         result = Solution().letterCombinations("")
-        assert result == []
+        self.assertTrue(not result)
 
     def test_digit_2_test(self):
         result = Solution().letterCombinations("2")
-        assert result == ["a","b","c"]
+        self.assertSequenceEqual(result, ["a", "b", "c"])
 
     def test_digit_2_3_test(self):
         result = Solution().letterCombinations("23")
-        expected = ["ad","ae","af","bd","be","bf","cd","ce","cf"]
+        expected = ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"]
         for r in expected:
-            assert result.__contains__(r)
+            self.assertTrue(r in result)
 
     def test_four_number_test(self):
         result = Solution().letterCombinations("2479")
@@ -33,4 +33,8 @@ class TestSolution(TestCase):
                     "ahqz", "bhqz", "chqz", "aiqz", "biqz", "ciqz", "agrz", "bgrz", "cgrz", "ahrz", "bhrz", "chrz",
                     "airz", "birz", "cirz", "agsz", "bgsz", "cgsz", "ahsz", "bhsz", "chsz", "aisz", "bisz", "cisz"]
         for r in expected:
-            assert result.__contains__(r)
+            self.assertTrue(r in result)
+
+
+if __name__ == '__main__':
+    unittest.main()

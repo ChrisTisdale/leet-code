@@ -1,9 +1,9 @@
-from unittest import TestCase
+import unittest
 
 from valid_sudoku.isValidSudoku import Solution
 
 
-class TestSolution(TestCase):
+class TestSolution(unittest.TestCase):
     def test_example_1(self):
         board = [
             ['5', '3', '.', '.', '7', '.', '.', '.', '.'],
@@ -18,7 +18,7 @@ class TestSolution(TestCase):
         ]
 
         is_valid = Solution().isValidSudoku(board)
-        assert is_valid == True
+        self.assertTrue(is_valid)
 
     def test_example_2(self):
         board = [
@@ -34,7 +34,7 @@ class TestSolution(TestCase):
         ]
 
         is_valid = Solution().isValidSudoku(board)
-        assert is_valid == False
+        self.assertFalse(is_valid)
 
     def test_invalid_row_only(self):
         board = [
@@ -66,7 +66,7 @@ class TestSolution(TestCase):
         ]
 
         is_valid = Solution().isValidSudoku(board)
-        assert is_valid == False
+        self.assertFalse(is_valid)
 
     def test_invalid_grid_only(self):
         board = [
@@ -82,4 +82,8 @@ class TestSolution(TestCase):
         ]
 
         is_valid = Solution().isValidSudoku(board)
-        assert is_valid == False
+        self.assertFalse(is_valid)
+
+
+if __name__ == '__main__':
+    unittest.main()
