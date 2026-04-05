@@ -54,7 +54,7 @@ impl Solution {
                     string.push_str(&last[i % last.len()]);
                     string.push(phone_chars.chars[c % phone_chars.chars.len()]);
                     set.push(string);
-                    if set.len() % last.len() == 0 {
+                    if set.len().is_multiple_of(last.len()) {
                         c += 1;
                     }
                 }

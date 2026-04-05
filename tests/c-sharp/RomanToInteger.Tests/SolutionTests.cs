@@ -7,24 +7,24 @@ public class SolutionTests
     [Fact]
     public void Example1()
     {
-        _target.RomanToInt("III").Should().Be(3);
+        Assert.Equal(3, _target.RomanToInt("III"));
     }
 
     [Fact]
     public void Example2()
     {
-        _target.RomanToInt("LVIII").Should().Be(58);
+        Assert.Equal(58, _target.RomanToInt("LVIII"));
     }
 
     [Fact]
     public void Example3()
     {
-        _target.RomanToInt("MCMXCIV").Should().Be(1994);
+        Assert.Equal(1994, _target.RomanToInt("MCMXCIV"));
     }
 
     [Fact]
     public void Example4()
     {
-        _target.RomanToInt("XX").Should().Be(20);
+        Assert.Equal(20, _target.RomanToInt("XX"));
     }
 }

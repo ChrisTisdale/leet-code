@@ -7,7 +7,7 @@ impl Solution {
         l1: Option<Box<ListNode>>,
         l2: Option<Box<ListNode>>,
     ) -> Option<Box<ListNode>> {
-        Solution::add_two_numbers_internal(l1, l2, 0)
+        Self::add_two_numbers_internal(l1, l2, 0)
     }
 
     fn add_two_numbers_internal(
@@ -32,7 +32,7 @@ impl Solution {
                 let result = v2.val + carry;
                 return Some(Box::new(ListNode {
                     val: result % 10,
-                    next: Solution::add_two_numbers_internal(l1, v2.next, result / 10),
+                    next: Self::add_two_numbers_internal(l1, v2.next, result / 10),
                 }));
             }
 
@@ -48,7 +48,7 @@ impl Solution {
                 let result = v1.val + carry;
                 return Some(Box::new(ListNode {
                     val: result % 10,
-                    next: Solution::add_two_numbers_internal(v1.next, l2, result / 10),
+                    next: Self::add_two_numbers_internal(v1.next, l2, result / 10),
                 }));
             }
 
@@ -60,7 +60,7 @@ impl Solution {
         let result = temp2.val + temp1.val + carry;
         Some(Box::new(ListNode {
             val: result % 10,
-            next: Solution::add_two_numbers_internal(temp1.next, temp2.next, result / 10),
+            next: Self::add_two_numbers_internal(temp1.next, temp2.next, result / 10),
         }))
     }
 }
@@ -73,11 +73,11 @@ trait IntConversion {
 #[cfg(test)]
 impl IntConversion for ListNode {
     fn from_integer(input: i32) -> Box<ListNode> {
-        let mut result = Box::new(ListNode::new(input % 10));
+        let mut result = Box::new(Self::new(input % 10));
 
         let local = input / 10;
         if local != 0 {
-            result.next = Some(ListNode::from_integer(local));
+            result.next = Some(Self::from_integer(local));
         }
 
         result
@@ -96,9 +96,9 @@ mod tests {
         let result = Solution::add_two_numbers(Some(l1), Some(l2));
         assert!(result.is_some());
         let check = result.unwrap().to_vec();
-        let expected = vec![7, 0, 8];
+        let expected = [7, 0, 8];
         assert_eq!(check.len(), expected.len());
-        for i in 0..(expected.len()) {
+        for i in 0..expected.len() {
             assert_eq!(check[i], expected[i]);
         }
     }
@@ -111,9 +111,9 @@ mod tests {
         let result = Solution::add_two_numbers(Some(l1), Some(l2));
         assert!(result.is_some());
         let check = result.unwrap().to_vec();
-        let expected = vec![0];
+        let expected = [0];
         assert_eq!(check.len(), expected.len());
-        for i in 0..(expected.len()) {
+        for i in 0..expected.len() {
             assert_eq!(check[i], expected[i]);
         }
     }
@@ -126,9 +126,9 @@ mod tests {
         let result = Solution::add_two_numbers(Some(l1), Some(l2));
         assert!(result.is_some());
         let check = result.unwrap().to_vec();
-        let expected = vec![8, 9, 9, 9, 0, 0, 0, 1];
+        let expected = [8, 9, 9, 9, 0, 0, 0, 1];
         assert_eq!(check.len(), expected.len());
-        for i in 0..(expected.len()) {
+        for i in 0..expected.len() {
             assert_eq!(check[i], expected[i]);
         }
     }
@@ -141,9 +141,9 @@ mod tests {
         let result = Solution::add_two_numbers(Some(l1), Some(l2));
         assert!(result.is_some());
         let check = result.unwrap().to_vec();
-        let expected = vec![8, 9, 9, 9, 0, 0, 0, 1];
+        let expected = [8, 9, 9, 9, 0, 0, 0, 1];
         assert_eq!(check.len(), expected.len());
-        for i in 0..(expected.len()) {
+        for i in 0..expected.len() {
             assert_eq!(check[i], expected[i]);
         }
     }
@@ -156,9 +156,9 @@ mod tests {
         let result = Solution::add_two_numbers(Some(l1), Some(l2));
         assert!(result.is_some());
         let check = result.unwrap().to_vec();
-        let expected = vec![0, 0, 0, 0, 0, 0, 0, 1];
+        let expected = [0, 0, 0, 0, 0, 0, 0, 1];
         assert_eq!(check.len(), expected.len());
-        for i in 0..(expected.len()) {
+        for i in 0..expected.len() {
             assert_eq!(check[i], expected[i]);
         }
     }

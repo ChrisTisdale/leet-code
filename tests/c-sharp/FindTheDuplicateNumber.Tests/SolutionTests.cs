@@ -8,6 +8,6 @@ public class SolutionTests
     [Theory]
     public void FindDuplicateTest(int[] input, int expected)
     {
-        _target.FindDuplicate(input).Should().Be(expected);
+        Assert.Equal(expected, _target.FindDuplicate(input));
     }
 }

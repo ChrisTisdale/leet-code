@@ -1,0 +1,14 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/c-sharp/FindTheDuplicateNumber/FindTheDuplicateNumber.csproj" />
+    <Project Path="src/c-sharp/FlattenNestedListIterator/FlattenNestedListIterator.csproj" />
+    <Project Path="src/c-sharp/PairsSpellsPotions/PairsSpellsPotions.csproj" />
+    <Project Path="src/c-sharp/RomanToInteger/RomanToInteger.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/c-sharp/FindTheDuplicateNumber.Tests/FindTheDuplicateNumber.Tests.csproj" />
+    <Project Path="tests/c-sharp/FlattenNestedListIterator.Tests/FlattenNestedListIterator.Tests.csproj" />
+    <Project Path="tests/c-sharp/PairsSpellsPotions.Tests/PairsSpellsPotions.Tests.csproj" />
+    <Project Path="tests/c-sharp/RomanToInteger.Tests/RomanToInteger.Tests.csproj" />
+  </Folder>
+</Solution>

@@ -1,13 +1,12 @@
 namespace FlattenNestedListIterator.Tests;
 
-public class IntListNestedInteger : NestedInteger
+using Xunit.Sdk;
+
+public record IntListNestedInteger : NestedInteger
 {
     private readonly int _value;
 
-    public IntListNestedInteger(int value)
-    {
-        _value = value;
-    }
+    public IntListNestedInteger(int value) => _value = value;
 
     public bool IsInteger() => true;
 

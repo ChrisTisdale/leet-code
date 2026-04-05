@@ -1,5 +1,5 @@
 <Project Sdk="Microsoft.NET.Sdk">
-    
+
     <ItemGroup>
         <ProjectReference Include="..\..\..\src\c-sharp\FlattenNestedListIterator\FlattenNestedListIterator.csproj"/>
     </ItemGroup>

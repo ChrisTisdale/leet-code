@@ -4,7 +4,7 @@ public class NestedIteratorTests
 {
     [ClassData(typeof(NestedIteratorTestData))]
     [Theory]
-    public void InputTests(IList<NestedInteger> input, IEnumerable<int> expected)
+    public void InputTests(IList<NestedInteger> input, int[] expected)
     {
         var target = new NestedIterator(input);
         var result = new List<int>();
@@ -13,6 +13,6 @@ public class NestedIteratorTests
             result.Add(target.Next());
         }
 
-        result.Should().Equal(expected);
+        Assert.Equal(expected, result);
     }
 }

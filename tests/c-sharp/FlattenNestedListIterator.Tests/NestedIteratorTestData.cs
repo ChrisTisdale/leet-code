@@ -2,76 +2,54 @@ namespace FlattenNestedListIterator.Tests;
 
 using System.Collections;
 
-public class NestedIteratorTestData : IEnumerable<object[]>
-{
-    private static readonly List<object[]> TestData = new()
-    {
-        new object[]
-        {
-            new List<NestedInteger>
-            {
+public class NestedIteratorTestData : IEnumerable<TheoryDataRow<List<NestedInteger>, int[]>> {
+    private static readonly List<TheoryDataRow<List<NestedInteger>, int[]>> TestData = [
+        new(
+            [
                 new ListNestedInteger { new IntListNestedInteger(1), new IntListNestedInteger(1) },
                 new IntListNestedInteger(2),
                 new ListNestedInteger { new IntListNestedInteger(1), new IntListNestedInteger(1) }
-            },
-            new[] { 1, 1, 2, 1, 1 }
-        },
-        new object[]
-        {
-            new List<NestedInteger>
-            {
+            ],
+            [1, 1, 2, 1, 1]
+        ),
+        new(
+            [
                 new IntListNestedInteger(1),
                 new ListNestedInteger { new IntListNestedInteger(4), new ListNestedInteger { new IntListNestedInteger(6) } }
-            },
-            new[] { 1, 4, 6 }
-        },
-        new object[]
-        {
-            new List<NestedInteger>
-            {
-                new ListNestedInteger { new ListNestedInteger() }
-            },
-            Array.Empty<int>()
-        },
-        new object[]
-        {
-            new List<NestedInteger>
-            {
-                new ListNestedInteger { new ListNestedInteger { new ListNestedInteger { new ListNestedInteger() } } }
-            },
-            Array.Empty<int>()
-        },
-        new object[]
-        {
-            new List<NestedInteger>
-            {
+            ],
+            [1, 4, 6]
+        ),
+        new(
+            [new ListNestedInteger { new ListNestedInteger() }],
+            []
+        ),
+        new(
+            [new ListNestedInteger { new ListNestedInteger { new ListNestedInteger { new ListNestedInteger() } } }],
+            []
+        ),
+        new(
+            [
                 new ListNestedInteger { new ListNestedInteger { new ListNestedInteger { new ListNestedInteger() } } },
                 new ListNestedInteger()
-            },
-            Array.Empty<int>()
-        },
-        new object[]
-        {
-            new List<NestedInteger>
-            {
+            ],
+            []
+        ),
+        new(
+            [
                 new ListNestedInteger { new ListNestedInteger { new ListNestedInteger { new ListNestedInteger() } } },
                 new IntListNestedInteger(1),
                 new ListNestedInteger(),
                 new ListNestedInteger { new ListNestedInteger() }
-            },
-            new[] { 1 }
-        },
-        new object[]
-        {
-            new List<NestedInteger>
-            {
-                new IntListNestedInteger(1), new IntListNestedInteger(2), new IntListNestedInteger(3), new IntListNestedInteger(4)
-            },
-            new[] { 1, 2, 3, 4 }
-        }
-    };
+            ],
+            [1]
+        ),
+        new(
+            [new IntListNestedInteger(1), new IntListNestedInteger(2), new IntListNestedInteger(3), new IntListNestedInteger(4)],
+            [1, 2, 3, 4]
+        )
+    ];
 
-    public IEnumerator<object[]> GetEnumerator() => TestData.GetEnumerator();
+    public IEnumerator<TheoryDataRow<List<NestedInteger>, int[]>> GetEnumerator() => TestData.GetEnumerator();
 
     IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
 }
