@@ -29,9 +29,9 @@ jobs:
         with:
           dotnet-version: ${{ matrix.dotnet-version }}
       - name: Install dependencies
-        run: dotnet restore leet-code.sln
+        run: dotnet restore leet-code.slnx
       - name: Build
-        run: dotnet build --configuration ${{ matrix.configuration }} --no-restore leet-code.sln
+        run: dotnet build --configuration ${{ matrix.configuration }} --no-restore leet-code.slnx
       - name: Test
         if: ${{ matrix.configuration == 'Debug' }}
-        run: dotnet test --no-build --no-restore --verbosity normal leet-code.sln
+        run: dotnet test --no-build --no-restore --verbosity normal leet-code.slnx

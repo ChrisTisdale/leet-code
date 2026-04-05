@@ -39,9 +39,9 @@ cargo test --all-features
 
 #### C#
 
-To run all the projects and their tests run: 
+To run all the projects and their tests run:
 ```bash
-dotnet test leet-code.sln
+dotnet test leet-code.slnx
 ```
 
 #### C++
