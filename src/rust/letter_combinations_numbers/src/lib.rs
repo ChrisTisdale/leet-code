@@ -40,9 +40,9 @@ impl Solution {
             if last.is_empty() {
                 let length = phone_chars.chars.len();
                 set = Vec::with_capacity(length);
-                for i in 0..length {
+                for c in phone_chars.chars.iter().take(length) {
                     let mut string = String::with_capacity(1);
-                    string.push(phone_chars.chars[i]);
+                    string.push(*c);
                     set.push(string);
                 }
             } else {
